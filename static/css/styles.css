@@ -1,0 +1,118 @@
+:root {
+  --primary: #007bff;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --dark: #1e293b;
+  --light: #f8fafc;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #0f172a; /* Fondo oscuro tipo ciberseguridad */
+  color: var(--light);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 420px;
+  background: #ffffff;
+  color: var(--dark);
+  padding: 30px;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#reader {
+  width: 100% !important;
+  border: none !important;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Estilo para los botones internos del lector html5-qrcode */
+#reader button {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.warning {
+  background: #fffbeb;
+  color: #92400e;
+  border: 2px solid #f59e0b;
+}
+.result-box {
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+  display: none;
+  font-size: 1rem;
+  line-height: 1.4;
+  animation: slideUp 0.3s ease-out;
+}
+.result-box small {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  line-height: 1.2;
+}
+.footer-espe {
+  margin-top: 25px;
+  font-size: 0.7rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.danger {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 2px solid var(--danger);
+}
+
+.safe {
+  background: #f0fdf4;
+  color: #166534;
+  border: 2px solid var(--success);
+}
+
+.btn-reload, .btn-install {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.btn-reload { background: var(--primary); color: white; }
+.btn-install { background: var(--success); color: white; margin-bottom: 10px; }
+
+.btn-reload:active, .btn-install:active { transform: scale(0.98); }

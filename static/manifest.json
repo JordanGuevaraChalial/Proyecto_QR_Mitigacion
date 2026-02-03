@@ -1,0 +1,15 @@
+{
+  "name": "Mitigador de QRishing ESPE",
+  "short_name": "QRShield",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#dc2626",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1216/1216550.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
