@@ -35,7 +35,7 @@ function onScanSuccess(decodedText) {
     })
     .then(response => response.text())
     .then(data => {
-        if (data.includes("🛑 BLOQUEADO")) {
+        if (data.includes("Bloqueado")) {
             statusDiv.className = "result-box danger";
         } else if (data.includes("⚠️") || data.includes("👤") || data.includes("📝")) {
             statusDiv.className = "result-box warning"; 
@@ -44,7 +44,6 @@ function onScanSuccess(decodedText) {
         }
         statusDiv.innerHTML = data;
         resetBtn.style.display = 'inline-block';
-        statusDiv.className = data.includes("BLOQUEADO") ? "result-box danger" : "result-box safe";
     });
 }
 
