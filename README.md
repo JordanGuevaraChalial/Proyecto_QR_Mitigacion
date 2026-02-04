@@ -1,6 +1,6 @@
 # 🛡️ QR Shield ESPE
 
-**Sistema de Mitigación de Amenazas en Códigos QR** Proyecto desarrollado para la Revista de Investigación ESPE. Esta aplicación detecta y bloquea ataques de **QRishing**, configuraciones de Wi-Fi maliciosas y suplantación de identidad en tiempo real.
+**Sistema de Mitigación de Amenazas en Códigos QR** lo que hace esta aplicación detecta y bloquea ataques de **QRishing**, configuraciones de Wi-Fi maliciosas y suplantación de identidad en tiempo real.
 
 ---
 
