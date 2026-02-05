@@ -5,27 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR Shield ESPE</title>
     <link rel="manifest" href="/static/manifest.json" />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/styles.css') }}"
-    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
     <script src="https://unpkg.com/html5-qrcode"></script>
   </head>
   <body>
     <div class="container">
       <h2>🛡️ QR Shield ESPE</h2>
-      <div id="reader"></div>
-      <div id="status" class="result-box"></div>
-      <button
-        id="btn-reset"
-        class="btn-reload"
-        style="display: none"
-        onclick="location.reload()"
-      >
+      <div id="reader" style="width:100%; max-width:500px; margin:0 auto;"></div>
+      <div id="status" class="result-box" style="display:none;"></div>
+      
+      <button id="btn-reset" class="btn-reload" style="display: none" onclick="location.reload()">
         Nuevo Escaneo
       </button>
+      
       <button id="installApp" class="btn-install" style="display: none">
-        Instalar applicativo
+        Instalar aplicación
       </button>
 
       <div class="footer-espe">Grupo 3 - Detector de QR Malicioso - ESPE</div>
